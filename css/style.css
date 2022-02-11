@@ -61,7 +61,12 @@ nav {
   padding: 16px;
   width: 98%;
 }
-
+.form-search {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 98%;
+}
 .form-group {
   display: flex;
   flex-direction: column;
@@ -83,10 +88,11 @@ nav {
 .form-search {
   margin-left: 15px;
   margin-bottom: 10px;
-  width: 100%;
+  width: 98%;
 }
 .form-search .form-groupp {
   display: flex;
+  border: 1px solid black;
   width: 100%;
   align-items: center;
 }
@@ -111,7 +117,7 @@ nav {
   border-radius: 10px;
   font-size: 16px;
   padding: 13px 16px;
-  width: 600px;
+  width: 100%;
 }
 #textJudul,
 #textPenulis,
@@ -169,12 +175,6 @@ nav {
 
   .wrapper .container {
     width: 90%;
-  }
-
-  .form-search {
-    display: flex;
-    width: 95%;
-    align-items: center;
   }
 
   .form-search label {
