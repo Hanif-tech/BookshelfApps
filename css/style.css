@@ -83,8 +83,13 @@ nav {
 .form-search {
   margin-left: 15px;
   margin-bottom: 10px;
+  width: 100%;
 }
-
+.form-search .form-groupp {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 .form-group label {
   margin-bottom: 4px;
   font-weight: lighter;
@@ -171,6 +176,7 @@ nav {
     width: 95%;
     align-items: center;
   }
+
   .form-search label {
     margin-right: 6px;
   }
