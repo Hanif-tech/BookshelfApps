@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="text-center">
+      <h1>Bookshelf Apps</h1>
+    </nav>
+
+    <div class="wrapper">
+      <div class="container shadow align-item">
+        <h2 class="container-header text-center">Masukkan Buku Baru</h2>
+        <form class="form" id="formInput">
+          <div class="form-group">
+            <label for="input1">Judul</label>
+            <input type="text" name="input1" id="textJudul" />
+          </div>
+          <div class="form-group">
+            <label for="input2">Penulis</label>
+            <input type="text" name="input2" id="textPenulis" style="text-transform: lowercase" />
+          </div>
+          <div class="form-group">
+            <label for="input3">Tahun</label>
+            <input type="number" name="input3" id="textTahun" />
+          </div>
+          <div class="form-group-check">
+            <p>Selesai dibaca</p>
+            <input type="checkbox" name="selesai dibaca" id="check" />
+          </div>
+          <input class="btn-submit" type="submit" name="submit" />
+        </form>
+      </div>
+      <div class="container shadow">
+        <h2 class="container-header text-center">Cari Buku</h2>
+        <form class="form-search" id="formSearch">
+          <label for="cari">Judul</label>
+          <input type="text" name="cari" id="textCari" />
+          <input type="submit" class="btn-submit" value="CARI" id="cari" />
+        </form>
+      </div>
+      <div class="container shadow">
+        <h2 class="container-header">Belum selesai dibaca</h2>
+        <div class="list-item" id="not-finished-reading"></div>
+      </div>
+      <div class="container shadow">
+        <h2 class="container-header">Selesai dibaca</h2>
+        <div class="list-item" id="finished-reading"></div>
+      </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
